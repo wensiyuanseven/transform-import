@@ -4,16 +4,18 @@
 
 该插件会把当前文件所有通过import函数方式引入改为通过import命令方式引入。
 ### 转换前
-> 路径请以@开头 以.vue文件结尾  别名@可在vite.config.js文件中配置
+> 路径请以@开头以.vue文件结尾，别名@可在vite.config.js文件中配置
 
 ```js
 const index = () => import('@/pages/index.vue')
+
 const tab = () => import('@/pages/tab.vue')
 ```
 ### 转换后
 
 ```js
 import index from '@/pages/index.vue'
+
 import tab from '@/pages/tab.vue'
 ```
 
@@ -27,7 +29,9 @@ npm install vite-plugin-vue-transform-import --save-dev
 
 ```js
 // vite.config.js
+
 import transformImport from 'vite-plugin-vue-transform-import'
+
 export default {
     alias: { '@': path.resolve(__dirname, 'src') },
     plugins: [
