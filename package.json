@@ -1,0 +1,17 @@
+{
+  "name": "vite-plugin-vue-transform-import",
+  "version": "1.0.0",
+  "description": "一个在打包阶段把import函数转换为import命令的vite插件",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wensiyuanseven/transform-import.git"
+  },
+  "keywords": ["vite-plugin"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wensiyuanseven/transform-import/issues"
+  },
+  "homepage": "https://github.com/wensiyuanseven/transform-import#readme"
+}
