@@ -1,0 +1,2 @@
+# transform-import
+一个把import函数转换为import命令的rollup插件
